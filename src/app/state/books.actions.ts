@@ -2,14 +2,14 @@ import { createActionGroup, props } from "@ngrx/store";
 import { Book } from "../book-list/books.model";
 
 /**
- *  Le fichier d'actions qui sert a décrire chaque actions des Books.
+ *?  Le fichier d'actions qui sert a décrire chaque actions des Books.
  */
 
 
 /**
  *  les actions books ...
  */
-export const BooksAction = createActionGroup({
+export const BooksActions = createActionGroup({
     source: 'Books',
     events: {
         'Add Book': props<{ bookId: string }>(),
