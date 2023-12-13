@@ -9,7 +9,7 @@ import { Book } from "./books.model";
 
 export class BookListComponent {
 
-    @Input() books: Readonly<Array<Book>> = [];
+    @Input() books: ReadonlyArray<Book> = [];
     @Output() add = new EventEmitter<string>();
 
 }
