@@ -3,6 +3,11 @@ import { BooksActions } from "./books.actions";
 
 export const initialState: ReadonlyArray<string> = [];
 
+
+/**
+ * Le reducer de collection,
+ * 
+ */
 export const collectionReducer = createReducer(
     initialState,
     on(BooksActions.removeBook, (state, { bookId }) =>
